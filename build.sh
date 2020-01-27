@@ -13,10 +13,12 @@ if [ ! -d ${TOP}/css-4.6.4 ]; then
     wget --no-verbose http://sourceforge.net/projects/cs-studio/files/nsls2-release/cs-studio-nsls2-4.6.4-linux.gtk.x86_64.tar.gz/download -O /tmp/cs-studio-nsls2-4.6.4-linux.gtk.x86_64.tar.gz
     mkdir ${TOP}/css-4.6.4
     tar xfvz /tmp/cs-studio-nsls2-4.6.4-linux.gtk.x86_64.tar.gz -C ${TOP}/css-4.6.4 --strip-components=1
+    chmod a+x ${TOP}/css-4.6.4/cs-studio
 fi
 
 if [ ! -d ${TOP}/css-4.6.4p ]; then
     wget --no-verbose http://sourceforge.net/projects/cs-studio/files/nsls2-release/cs-studio-nsls2-4.6.4p-linux.gtk.x86_64.tar.gz/download -O /tmp/cs-studio-nsls2-4.6.4p-linux.gtk.x86_64.tar.gz
     mkdir ${TOP}/css-4.6.4p
     tar xfvz /tmp/cs-studio-nsls2-4.6.4p-linux.gtk.x86_64.tar.gz -C ${TOP}/css-4.6.4p --strip-components=1
+    chmod a+x ${TOP}/css-4.6.4p/cs-studio
 fi
