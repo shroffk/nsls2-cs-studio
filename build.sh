@@ -9,6 +9,13 @@ if [ ! -d ${TOP}/lib/jvm/jdk-11.0.2 ]; then
     rm /tmp/openjdk-11+28_linux-x64_bin.tar.gz
 fi
 
+if [ ! -d ${TOP}/css-4.5.1 ]; then
+    wget --no-verbose http://sourceforge.net/projects/cs-studio/files/nsls2-release/cs-studio-nsls2-4.5.1-linux.gtk.x86_64.tar.gz/download -O /tmp/cs-studio-nsls2-4.5.1-linux.gtk.x86_64.tar.gz
+    mkdir ${TOP}/css-4.5.1
+    tar xfvz /tmp/cs-studio-nsls2-4.5.1-linux.gtk.x86_64.tar.gz -C ${TOP}/css-4.5.1 --strip-components=1
+    chmod a+x ${TOP}/css-4.5.1/cs-studio
+fi
+
 if [ ! -d ${TOP}/css-4.6.4 ]; then
     wget --no-verbose http://sourceforge.net/projects/cs-studio/files/nsls2-release/cs-studio-nsls2-4.6.4-linux.gtk.x86_64.tar.gz/download -O /tmp/cs-studio-nsls2-4.6.4-linux.gtk.x86_64.tar.gz
     mkdir ${TOP}/css-4.6.4
