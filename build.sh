@@ -29,3 +29,17 @@ if [ ! -d ${TOP}/css-4.6.4p ]; then
     tar xfvz /tmp/cs-studio-nsls2-4.6.4p-linux.gtk.x86_64.tar.gz -C ${TOP}/css-4.6.4p --strip-components=1
     chmod a+x ${TOP}/css-4.6.4p/cs-studio
 fi
+
+if [ ! -d ${TOP}/css-4.6.5p ]; then
+    wget --no-verbose http://sourceforge.net/projects/cs-studio/files/nsls2-release/cs-studio-nsls2-4.6.5p-linux.gtk.x86_64.tar.gz/download -O /tmp/cs-studio-nsls2-4.6.5p-linux.gtk.x86_64.tar.gz
+    mkdir ${TOP}/css-4.6.5p
+    tar xfvz /tmp/cs-studio-nsls2-4.6.5p-linux.gtk.x86_64.tar.gz -C ${TOP}/css-4.6.5p --strip-components=1
+    chmod a+x ${TOP}/css-4.6.5p/cs-studio
+fi
+
+if [ ! -d ${TOP}/css-4.6.6p ]; then
+    wget --no-verbose http://sourceforge.net/projects/cs-studio/files/nsls2-release/cs-studio-nsls2-4.6.6p-linux.gtk.x86_64.tar.gz/download -O /tmp/cs-studio-nsls2-4.6.6p-linux.gtk.x86_64.tar.gz
+    mkdir ${TOP}/css-4.6.6p
+    tar xfvz /tmp/cs-studio-nsls2-4.6.6p-linux.gtk.x86_64.tar.gz -C ${TOP}/css-4.6.6p --strip-components=1
+    chmod a+x ${TOP}/css-4.6.6p/cs-studio
+fi
